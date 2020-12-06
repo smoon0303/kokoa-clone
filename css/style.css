@@ -1,25 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+@import "variables.css";
+
 body {
     font-family: 'Texturina', serif;
-
 }
 
-.status-bar{
+.welcome-header{
+    margin: 90px 0px;
+    text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.status-bar__column {
-    width: 33%;
+.welcome-header__title{
+    margin-bottom : 40px;
+    font-size: 25px;
 }
 
-.status-bar__column:nth-child(2){
+.welcome-header__text{
+    width: 60%;
+    opacity: 0.7;
+}
+
+#login-form{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin:0px 30px;
 }
 
-.status-bar__column:last-child{
-    display:flex;
-    justify-content: flex-end;
-    align-items:center;
+#login-form input{
+    border: none;
+    font-size: 18px;
+    padding: 15px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    transition: border-color 0.3s ease-in-out;
 }
+
+#login-form input::placeholder{
+    color: rgba(0,0,0,0.4);
+
+}
+
+#login-form input:focus {
+    border-color:  var(--yellow);
+}
+
