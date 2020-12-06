@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Welcome to Kokoa Talk</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
 </head>
 <style>
 
 </style>
 <body>
-    <div id="status-bar">
+    <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
             <!--Wifi icon-->
@@ -20,25 +23,28 @@
         </div>
         <div class="status-bar__column">
             <span>110%</span>
+            <i class="fas fa-battery-full"></i>
             <!--Battery Icon-->
             <!--Lightning Icon-->
         </div>
     </div>
-    <div>
-        <span>Welcome to KokoaTalk</span>
-        <span>If you have a Kokoa Account, log in with your email or phone number.</span>
-    </div>
 
-    <input placeholder="Email or phone number" />
-    <input type="password" placeholder="Password" />
-    <div id="login_button">
-        <span>Log in</span>
-    </div>
-    <div id="Signup_button">
-        <span>Sign Up</span>
-    </div>
-    <div id="Findpassword_button">
-        <span>Find Kokoa Account or Password</span>
-    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+        <p class="welcome-header__text">
+            If you have a Kokoa Account, log in with your email or phone number.
+        </p>
+    </header>
+    
+    <form id="login-form">
+        <input type-="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submit" value="Log In"/>
+        <a href="#">Find kokoa account or password</a>
+    </form>
+
+    
+
 </body>
+<script src="https://kit.fontawesome.com/227e5a5f1b.js" crossorigin="anonymous"></script>
 </html>
