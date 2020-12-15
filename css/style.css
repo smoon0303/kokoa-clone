@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Texturina&display=swap");
 @import "reset.css";
 @import "variables.css";
 
@@ -10,5 +10,13 @@
 @import "screens/login.css";
 
 body {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  font-weight: 900 !important;
 }
